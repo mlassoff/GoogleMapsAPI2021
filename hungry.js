@@ -7,7 +7,8 @@ function initMap(){
         location.long = pos.coords.longitude;
         map = new google.maps.Map(document.getElementById('map'),{
           center: {lat: location.lat, lng: location.long },
-          zoom: 15
+          zoom: 15,
+          disableDefaultUI: true
         });
         getRestaurants(location);
   });
